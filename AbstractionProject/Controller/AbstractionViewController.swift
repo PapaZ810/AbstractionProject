@@ -23,7 +23,6 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
                                animated: true,
                                completion: nil)
         }
-        // Do any additional setup after loading the view.
     }
     
     //MARK: - Data Members
@@ -70,7 +69,7 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
         
         return orderedAbstractionViews[previousIndex]
     }
-    
+    //Swipe right
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
     {
         guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
